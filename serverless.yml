@@ -8,6 +8,8 @@ plugins:
 provider:
   name: aws
   runtime: nodejs20.x
+  httpApi:
+    cors: true
   environment:
     DEEPL_API_KEY: ${env:DEEPL_API_KEY}
 
