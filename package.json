@@ -1,0 +1,15 @@
+{
+  "name": "deepl-translate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sls:deploy": "sls deploy --stage dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-offline": "^13.8.0"
+  }
+}
