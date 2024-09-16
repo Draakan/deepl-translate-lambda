@@ -2,7 +2,7 @@ exports.translate = async (event) => {
   try {
     const textToTranslate = JSON.parse(event.body).text;
 
-    const result = await fetch('https://api-free.deepl.com/v2/translate', {
+    const result = await fetch(process.env.DEEPL_API_URL, {
       method: 'POST',
       headers: {
         'Authorization': `DeepL-Auth-Key ${process.env.DEEPL_API_KEY}`,

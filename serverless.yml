@@ -13,6 +13,7 @@ provider:
     cors: true
   environment:
     DEEPL_API_KEY: ${env:DEEPL_API_KEY}
+    DEEPL_API_URL: ${env:DEEPL_API_URL}
 
 functions:
   hello:
