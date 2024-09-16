@@ -14,6 +14,8 @@ provider:
   environment:
     DEEPL_API_KEY: ${env:DEEPL_API_KEY}
     DEEPL_API_URL: ${env:DEEPL_API_URL}
+    TARGET_LANG: ${env:TARGET_LANG}
+    SOURCE_LANG: ${env:SOURCE_LANG}
 
 functions:
   hello:

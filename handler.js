@@ -10,8 +10,8 @@ exports.translate = async (event) => {
       },
       body: JSON.stringify({
         text: [textToTranslate],
-        target_lang: 'UK',
-        source_lang: 'EN',
+        target_lang: process.env.TARGET_LANG,
+        source_lang: process.env.SOURCE_LANG,
       }),
     });
   
